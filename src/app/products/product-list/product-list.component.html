@@ -1,0 +1,7 @@
+<h1>Product List</h1>
+<ul class="list-group">
+  <li *ngFor="let p of products" class="list-group-item">
+    <a (click)="gotoDetails(p.id)" routerLinkActive="active">{{p.prodName}}</a>
+  </li>
+</ul>
+<router-outlet></router-outlet>
